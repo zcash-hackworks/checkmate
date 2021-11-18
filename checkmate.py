@@ -47,6 +47,7 @@ def main():
     for h in range(start_height,latest_height,block_interval):
         os.system(command_template.substitute(height=h,host=lightwalletd_host))
     
+    os.system(command_template.substitute(height=latest_height,host=lightwalletd_host))
 
 if __name__ == "__main__":
     main()
