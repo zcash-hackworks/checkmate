@@ -7,10 +7,16 @@ Your lightwalletd checkpoint mate.
 
 ## Usage 
 
-Example: call checkmate and generate checkpoint json files starting from block 1346316 until latest height with a 10000 blocks interval.
+Example: call checkmate and generate Mainnet checkpoint json files starting from block 1685000 until latest height with a 2500 blocks interval.
 
 ```` bash
-python3 checkmate.py lightwalletd.com:9067 --start-height 1346316 --to-json
+python3 checkmate.py mainnet.lightwalletd.com:9067 --start-height 1685000 --interval 2500 --to-json
+````
+
+Example: call checkmate and generate Testnet checkpoint json files starting from block 1800000 until latest height with a 10000 blocks interval.
+
+```` bash
+python3 checkmate.py testnet.lightwalletd.com:9067 --start-height 1800000 --interval 10000 --to-json
 ````
 
 ## Generated Output
